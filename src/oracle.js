@@ -5,12 +5,12 @@ import {
 
 const oracle = () => {
 
-  newRequest((event) => {
+  newRequest((id) => {
 
     // Use test temperature instead of calling the API from thirdparty
     // NOte that temperature should be converted uint value with 2 decimals
     const temp = convertTemperature(10);
-    updateRequest({roundId: event.args.id, valueRetrieved: temp})
+    updateRequest({roundId: id, valueRetrieved: temp})
   });
 };
 

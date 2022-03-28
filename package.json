@@ -24,10 +24,7 @@
   },
   "dependencies": {
     "dotenv": "^5.0.1",
-    "request": "^2.87.0",
-    "request-promise-native": "^1.0.5",
-    "web3": "^1.7.1",
-    "@truffle/contract": "^4.5.2",
-    "web3-eth-contract": "^1.7.1"
+    "ethers": "^5.6.2"
   }
 }
+

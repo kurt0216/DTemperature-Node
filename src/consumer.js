@@ -4,17 +4,17 @@ import {
 } from "./ethereum";
 
 const consume = () => {
-  updatedRequest((event) => {
+  updatedRequest((id, temperature) => {
     console.log("UPDATE REQUEST DATA EVENT ON SMART CONTRACT");
     console.log("UPDATE REQUEST DATA: ");
-    console.log(event.args);
+    console.log(temperature);
     console.log("\n");
   });
 
-  newRequest((event) => {
+  newRequest((id) => {
     console.log("NEW REQUEST DATA EVENT ON SMART CONTRACT");
     console.log("NEW REQUEST DATA: ");
-    console.log(event.args);
+    console.log(id);
     console.log("\n");
   });
 };
