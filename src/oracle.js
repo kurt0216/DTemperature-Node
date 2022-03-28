@@ -8,7 +8,7 @@ const oracle = () => {
   newRequest((id) => {
 
     // Use test temperature instead of calling the API from thirdparty
-    // NOte that temperature should be converted uint value with 2 decimals
+    // Note that temperature should be converted uint value with 2 decimals
     const temp = convertTemperature(10);
     updateRequest({roundId: id, valueRetrieved: temp})
   });
