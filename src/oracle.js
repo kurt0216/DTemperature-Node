@@ -19,7 +19,7 @@ const oracle = () => {
 // 27300 => 0`C
 // 27400 => 10`C
 const convertTemperature = (temperature) => {
-  return (temperature + 273) * 100;
+  return (temperature + 273) * 10 * (process.env.DECIMALS);
 }
 
 export default oracle;
